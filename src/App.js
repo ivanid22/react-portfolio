@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Button from './components/Button/Button';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from 'react-router-dom';
+import RouteTest from './components/RouteTest/RouteTest';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
+
+  const [navOpen, setNavOpen] = useState(false);
+
+  let open = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar open={navOpen} handleClose={() => setNavOpen(!navOpen)} />
+      <button onClick={() => setNavOpen(!navOpen) }>Toggle nav</button>
     </div>
+    
   );
 }
 

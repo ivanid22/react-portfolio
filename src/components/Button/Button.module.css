@@ -1,0 +1,38 @@
+.button {
+  padding: 1em 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  background: -webkit-linear-gradient(298deg, rgb(141, 132, 253) 0%, rgb(125, 115, 252) 100%);
+  background: -o-linear-gradient(298deg, rgb(141, 132, 253) 0%, rgb(125, 115, 252) 100%);
+  background: -ms-linear-gradient(298deg, rgb(141, 132, 253) 0%, rgb(125, 115, 252) 100%);
+  background: -moz-linear-gradient(298deg, rgb(141, 132, 253) 0%, rgb(125, 115, 252) 100%);
+  background: linear-gradient(152deg, rgb(141, 132, 253) 0%, rgb(125, 115, 252) 100%);
+  border: none;
+  color: rgb(237, 236, 255);
+  transition: background 1s ease;
+}
+
+.button:hover { 
+  background: -webkit-linear-gradient(299deg, rgb(125, 115, 252) 0%, rgb(125, 115, 252) 96%);
+  background: -o-linear-gradient(299deg, rgb(125, 115, 252) 0%, rgb(125, 115, 252) 96%);
+  background: -ms-linear-gradient(299deg, rgb(125, 115, 252) 0%, rgb(125, 115, 252) 96%);
+  background: -moz-linear-gradient(299deg, rgb(125, 115, 252) 0%, rgb(125, 115, 252) 96%);
+  background: linear-gradient(151deg, rgb(125, 115, 252) 0%, rgb(125, 115, 252) 96%);
+  color: white;
+  transition: all 1s ease;
+}
+
+.button:active {
+  background: -webkit-linear-gradient(299deg, rgb(94, 66, 215) 0%, rgb(94, 66, 215) 96%);
+  background: -o-linear-gradient(299deg, rgb(94, 66, 215) 0%, rgb(94, 66, 215) 96%);
+  background: -ms-linear-gradient(299deg, rgb(94, 66, 215) 0%, rgb(94, 66, 215) 96%);
+  background: -moz-linear-gradient(299deg, rgb(94, 66, 215) 0%, rgb(94, 66, 215) 96%);
+  background: linear-gradient(151deg, rgb(94, 66, 215) 0%, rgb(94, 66, 215) 96%);
+  color: rgb(234, 234, 246)
+}
+
+.button:disabled {
+  background: rgb(42, 43, 51);
+  color: rgb(200, 200, 212);
+}

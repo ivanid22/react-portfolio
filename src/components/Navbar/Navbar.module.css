@@ -1,0 +1,53 @@
+.navbar {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: rgb(94, 66, 215);
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.closeButton {
+  color: #ababab;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+.navbarHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1em;
+}
+
+.navbarOpen {
+  width: 375px;
+}
+
+.shapeOne {
+  position: absolute;
+  width: 226px;
+  height: 427px;
+  left: -58px;
+  top: 92px;
+  background: rgba(237, 236, 255, 0.4);
+  filter: blur(50px);
+  transform: rotate(25.09deg);
+}
+
+.shapeTwo {
+  position: absolute;
+  width: 420.13px;
+  height: 244.06px;
+  left: 318.94px;
+  top: 432.54px;
+  background: rgba(237, 236, 255, 0.9);
+  filter: blur(50px);
+  transform: rotate(40.52deg);
+}
