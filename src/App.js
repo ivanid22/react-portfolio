@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
 import './App.css';
-import Button from './components/Button/Button';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from 'react-router-dom';
-import RouteTest from './components/RouteTest/RouteTest';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTimes, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './components/Navbar/Navbar';
+import NavbarItem from './components/NavbarItem/NavbarItem';
+
+library.add(faTimes, faChevronRight);
 
 function App() {
 
   const [navOpen, setNavOpen] = useState(false);
 
-  let open = false;
   return (
     <div>
-      <Navbar open={navOpen} handleClose={() => setNavOpen(!navOpen)} />
+      <Navbar open={navOpen} handleClose={() => setNavOpen(!navOpen)}>
+        <NavbarItem>Portfolio</NavbarItem>
+        <NavbarItem>About</NavbarItem>
+        <NavbarItem>Contact</NavbarItem>
+      </Navbar>
       <button onClick={() => setNavOpen(!navOpen) }>Toggle nav</button>
     </div>
     

@@ -13,11 +13,15 @@
 }
 
 .closeButton {
-  color: #ababab;
+  color: #EDECFF;
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 2em;
+}
+
+.closeButton:hover {
+  cursor: pointer;
 }
 
 .navbarHeader {
