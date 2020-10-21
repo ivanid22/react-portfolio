@@ -5,6 +5,8 @@ import SkillsList from '../SkillsList/SkillsList'
 const Header = () => {
   return (
     <div className={styles.header}>
+      <div className={styles.figMobileOne} />
+      <div className={styles.figMobileTwo} />
       <div className={styles.headerCentered}>
         <h2 className={styles.name}>Ivan Diaz</h2>
         <h3 className={styles.title}>Software Developer</h3>
@@ -13,7 +15,7 @@ const Header = () => {
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me
         </div>
-        <div className={`${styles.skills} row`}>
+        <div className={`${styles.skillsRow} row`}>
             <SkillsList heading="Languages">
                 <span>HTML</span>
                 <span>CSS</span>

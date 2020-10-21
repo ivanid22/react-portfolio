@@ -1,9 +1,14 @@
-@import '../../styles/common.scss';
+@import "../../styles/common.scss";
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.skillsRow {
+  padding-top: 40px;
 }
 
 .headerCentered {
@@ -35,6 +40,29 @@
   border-bottom: 1px solid #646369;
 }
 
-.skills {
-  
+.figMobileOne {
+  position: absolute;
+  background: #edecff;
+  filter: blur(50px);
+  width: 160px;
+  height: 160px;
+  left: -106px;
+  top: 0px;
+}
+
+.figMobileTwo {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 339px;
+  top: 495px;
+  background: #edecff;
+  filter: blur(50px);
+}
+
+@media (min-width: 768px) {
+  .figMobileOne,
+  .figMobileTwo {
+    display: none;
+  }
 }

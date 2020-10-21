@@ -11,7 +11,7 @@ const SkillsList = ({ heading, children }) => {
   }
   
   return (
-    <div className={`${styles.skillsList} col-4 col-lg-3`}>
+    <div className={`${styles.skillsList} col-6 col-lg-4`}>
       <h4>{heading}</h4>
       <ul className={styles.list}>
         { renderChildren() }
