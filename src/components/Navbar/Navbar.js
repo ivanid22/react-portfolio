@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Navbar.module.scss'
+import styles from './Navbar.module.scss';
 import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const classes = classNames.bind(styles);
 

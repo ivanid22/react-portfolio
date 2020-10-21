@@ -1,9 +1,11 @@
+@import '../../styles/common.scss';
+
 .navbar {
   overflow: hidden;
   display: flex;
   position: relative;
   flex-direction: column;
-  background: rgb(94, 66, 215);
+  background: $main-bg; //rgb(94, 66, 215);
   position: fixed;
   height: 100vh;
   width: 0;

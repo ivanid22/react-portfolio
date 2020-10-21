@@ -1,0 +1,21 @@
+@import './styles/common.scss';
+
+.navBarToggle {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBrand {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 980px) {
+  .navBarToggle {
+    display: none;
+  }
+}
