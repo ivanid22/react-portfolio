@@ -1,0 +1,15 @@
+@import '../../styles/common.scss';
+
+.list {
+  list-style-type: none;
+}
+
+.list > h2 {
+  margin-bottom: 20px;
+}
+
+.list > * {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24;
+}

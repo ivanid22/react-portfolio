@@ -2,6 +2,7 @@
 
 .navbar {
   overflow: hidden;
+  justify-content: flex-start;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -11,6 +12,7 @@
   width: 0;
   top: 0;
   left: 0;
+  padding: 0;
   transition: width 0.5s ease;
 }
 
@@ -27,6 +29,7 @@
 }
 
 .navbarHeader {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 0 1em;

@@ -10,8 +10,14 @@
 }
 
 .navBrand {
+  align-self: flex-end;
   font-size: 18px;
   letter-spacing: 0.03em;
+}
+
+.mainContainer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (min-width: 720px) {
