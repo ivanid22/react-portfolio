@@ -1,0 +1,17 @@
+@import '../../styles/common.scss';
+
+.navSocial {
+  display: none;
+}
+
+.navSocialItem {
+  margin-left: 0.5em;
+  font-size: 15px;
+}
+
+@media (min-width: 720px) {
+  .navSocial {
+    display: flex;
+    align-items: center;
+  }
+}

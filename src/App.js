@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import NavbarItem from './components/NavbarItem/NavbarItem';
 import NavigationItem from './components/NavigationItem/Navigationitem';
 import Nav from './components/Nav/Nav';
+import NavSocial from './components/NavSocial/NavSocial';
 import styles from './Portfolio.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -29,10 +30,11 @@ function App() {
           <span className={styles.navBrand}>Ivan Diaz</span>
         </NavigationItem>
         <NavigationItem>
-          <div className={styles.navBarToggle} onClick={() => setNavOpen(!navOpen)}>
-            <FontAwesomeIcon icon={faBars} size="lg" />
-          </div>
+          <NavSocial />
         </NavigationItem>
+        <div className={styles.navBarToggle} onClick={() => setNavOpen(!navOpen)}>
+          <FontAwesomeIcon icon={faBars} size="lg" />
+        </div>
       </Nav>
     </div>
   );
