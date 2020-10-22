@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Header.module.scss";
 import SkillsList from '../SkillsList/SkillsList'
 import SocialBar from "../SocialBar/SocialBar";
+import ScrollBrand from "../ScrollBrand/ScrollBrand";
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const urls = {
   github: 'localhost',
@@ -40,7 +42,11 @@ const Header = () => {
             </SkillsList>
         </div>
       </div>
-      <SocialBar urls={urls} />
+      <div className={styles.headingFooter}>
+        <ScrollBrand icon={faArrowDown} caption="Projects" />
+        <SocialBar urls={urls} />
+        <ScrollBrand icon={faArrowDown} caption="Projects" />
+      </div>
     </div>
   );
 };

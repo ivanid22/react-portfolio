@@ -1,0 +1,15 @@
+@import '../../styles/common.scss';
+
+.scrollBrand {
+  display: flex;
+  align-items: center;
+}
+
+.scrollBrand svg {
+  color: $neutral-6;
+}
+
+.scrollBrand > span {
+  font-size: 20px;
+  font-weight: 500;
+}
