@@ -1,6 +1,13 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import SkillsList from '../SkillsList/SkillsList'
+import SocialBar from "../SocialBar/SocialBar";
+
+const urls = {
+  github: 'localhost',
+  linkedin: 'localhost',
+  twitter: 'localhost',
+}
 
 const Header = () => {
   return (
@@ -33,6 +40,7 @@ const Header = () => {
             </SkillsList>
         </div>
       </div>
+      <SocialBar urls={urls} />
     </div>
   );
 };

@@ -1,0 +1,18 @@
+@import '../../styles/common.scss';
+
+.socialBar {
+  display: flex;
+  align-items: center;
+}
+
+.socialBarItem {
+  padding: 0 0.5em;
+}
+
+.socialBarItem > a > svg {
+  color: #fff;
+}
+
+.socialBarItem > a > svg:hover {
+  color: darken(#fff, 20%);
+}

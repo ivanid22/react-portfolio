@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const classes = classNames.bind(styles);
 
 const Navbar = ({ children, open, handleClose }) => {
+  
   const className = classes({
     navbarOpen: open,
     navbar: true,

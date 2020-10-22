@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './NavigationItem.module.scss';
 
 const NavigationItem = ({ children }) => {
