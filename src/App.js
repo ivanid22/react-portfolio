@@ -12,6 +12,7 @@ import Nav from './components/Nav/Nav';
 import NavSocial from './components/NavSocial/NavSocial';
 import Header from './components/Header/Header';
 import styles from './Portfolio.module.scss';
+import RecentWorkSection from './components/RecentWorkSection/RecentWorkSection';
 
 library.add(faTimes, faChevronRight, faBars);
 
@@ -39,8 +40,8 @@ function App() {
           <FontAwesomeIcon icon={faBars} size="lg" />
         </div>
       </Nav>
-
       <Header />
+      <RecentWorkSection />
     </div>
   );
 }

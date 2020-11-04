@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 55px;
 }
 
 .name {
@@ -61,14 +63,32 @@
 }
 
 .headingFooter {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.headingFooter > div:first-child {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .figMobileOne,
   .figMobileTwo {
     display: none;
+  }
+
+  .figMobileTwo {
+    display: none;
+  }
+
+  .headingFooter {
+    flex-direction: row;
+  }
+
+  .headingFooter > div:first-child {
+    display: block;
   }
 }

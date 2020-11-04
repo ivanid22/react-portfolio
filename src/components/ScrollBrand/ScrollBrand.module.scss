@@ -1,7 +1,9 @@
 @import '../../styles/common.scss';
 
 .scrollBrand {
+  margin-top: 40px;
   display: flex;
+  color: $neutral-6;
   align-items: center;
 }
 
@@ -12,4 +14,10 @@
 .scrollBrand > span {
   font-size: 20px;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .scrollBrand {
+    margin-top: 0;
+  }
 }

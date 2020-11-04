@@ -9,7 +9,8 @@ const urls = {
   github: 'localhost',
   linkedin: 'localhost',
   twitter: 'localhost',
-}
+  angelist: 'localhost',
+};
 
 const Header = () => {
   return (
@@ -43,9 +44,9 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.headingFooter}>
-        <ScrollBrand icon={faArrowDown} caption="Projects" />
+        <ScrollBrand icon={faArrowDown} caption="Work" />
         <SocialBar urls={urls} />
-        <ScrollBrand icon={faArrowDown} caption="Projects" />
+        <ScrollBrand icon={faArrowDown} caption="Work" />
       </div>
     </div>
   );

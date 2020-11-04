@@ -1,0 +1,19 @@
+@import '../../styles/common.scss';
+
+.sectionContainer {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeading {
+  width: 100%;
+  color: $primary-3;
+}
+
+.sectionHeading > h1 {
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
