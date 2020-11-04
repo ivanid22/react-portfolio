@@ -1,0 +1,38 @@
+@import '../../styles/common.scss';
+
+.itemContainer {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.pictureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  color: $primary;
+}
+
+.infoSummary {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $neutral-6;
+}
+
+@media (min-width: 768px) {
+  .itemContainer {
+    flex-direction: row;
+  }
+}
