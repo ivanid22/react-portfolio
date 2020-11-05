@@ -1,6 +1,7 @@
 @import '../../styles/common.scss';
 
 .itemContainer {
+  z-index: 2;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -29,6 +30,43 @@
   line-height: 28px;
   font-weight: 400;
   color: $neutral-6;
+}
+
+.modalTitle {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.modalContentWrapper {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.modalRowOne {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalDescriptionParagraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.closeButton {
+  position: relative;
+  top: -20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: none;
+  height: 50%;
 }
 
 @media (min-width: 768px) {

@@ -3,3 +3,7 @@
   font-family: 'Roboto', sans-serif;
   background: #191765;
 }
+
+.blurred {
+  filter: blur(8px);
+}
