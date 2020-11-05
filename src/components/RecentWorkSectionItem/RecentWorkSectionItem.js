@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faTimes, faWindowMaximize } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './RecentWorkSectionItem.module.scss';
 import TechStackDetails from '../TechStackDetails/TechStackDetails';
+import Button from '../Button/Button';
 
 const modalStyle = {
   overlay: {
     backgroundColor: 'inherit',
+    transition: 'all 0.5s ease',
   },
   content: {
     fontFamily: '\'Roboto\', sans-serif',
@@ -26,7 +29,7 @@ Modal.setAppElement('#root');
 
 const RecentWorkSectionItem = ({ projectInfo, reversed }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const { imageUrl, projectName, projectSummary, techStack } = projectInfo;
+  const { imageUrl, projectName, projectSummary, techStack, liveUrl, repoUrl } = projectInfo;
   const appContainer = document.querySelector("#root"); // Get the app element from DOM to toggle a class. Awful hack, don't do it.
 
   const showModal = () => {
@@ -62,6 +65,20 @@ const RecentWorkSectionItem = ({ projectInfo, reversed }) => {
             {projectSummary}
           </p>
           <TechStackDetails stack={techStack} />
+          <div className={style.modalButtonsContainer}>
+            <div className={style.buttonWrapper}>
+              <Button width={105} enabled onClick={() => window.open(liveUrl, '_blank')}>
+                <span>See live</span>
+                <FontAwesomeIcon icon={faWindowMaximize} size='2x' />
+              </Button>
+            </div>
+            <div className={style.buttonWrapper}>
+              <Button width={130} enabled onClick={() => window.open(repoUrl, '_blank')}>
+                <span>View source</span>
+                <FontAwesomeIcon icon={faGithub} size='2x' />
+              </Button>
+            </div>
+          </div>
         </div>
       </Modal>
       </div>

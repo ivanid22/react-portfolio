@@ -52,7 +52,20 @@
   justify-content: space-between;
 }
 
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modalButtonsContainer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .modalDescriptionParagraph {
+  margin-top: 24px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -61,6 +74,7 @@
 }
 
 .modalImgContainer {
+  margin-top: 24px;
   max-height: 40vh;
   height: 181px;
   background-size: cover;

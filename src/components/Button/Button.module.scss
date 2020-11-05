@@ -1,0 +1,37 @@
+@import '../../styles/common';
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  padding: 12px;
+  background-color: $primary-2;
+  color: $primary-4;
+  border: none;
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  cursor: pointer;
+}
+
+.button:active {
+  background: #5e42d7;
+}
+
+.button:disabled {
+  background: #2a2b33;
+}
+
+.button > * {
+  margin-right: 15px;
+}
+
+.button > *:last-child {
+  margin-right: 0;
+}

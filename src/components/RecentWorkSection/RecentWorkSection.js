@@ -13,6 +13,8 @@ const testProject = {
     'Ruby on Rails',
     'css',
   ],
+  liveUrl: 'localhost:3000',
+  repoUrl: 'localhost:3000',
 };
 
 const RecentWorkSection = () => {
