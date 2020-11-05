@@ -7,7 +7,12 @@ const testProject = {
   imageUrl: image,
   projectName: "Test project",
   projectSummary:
-    "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. including versions of Lorem Ipsum. including versions of Lorem Ipsum.",
+  techStack: [
+    'html',
+    'Ruby on Rails',
+    'css',
+  ],
 };
 
 const RecentWorkSection = () => {

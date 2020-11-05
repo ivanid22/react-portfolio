@@ -1,0 +1,27 @@
+.stackDetailsContainer {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+
+.stack {
+  height: 100%;
+  display: flex;
+}
+
+.stackItem {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border-left: 1px solid white;
+}
+
+.stackItem:last-child {
+  border-right: 1px solid white;
+}
