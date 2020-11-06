@@ -14,6 +14,7 @@ import Header from './components/Header/Header';
 import styles from './Portfolio.module.scss';
 import RecentWorkSection from './components/RecentWorkSection/RecentWorkSection';
 import ContactSection from './components/ContactSection/ContactSection';
+import Footer from './components/Footer/Footer';
 
 library.add(faTimes, faChevronRight, faBars);
 
@@ -44,6 +45,7 @@ function App() {
       <Header />
       <RecentWorkSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }
