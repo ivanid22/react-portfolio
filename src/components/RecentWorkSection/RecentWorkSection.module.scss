@@ -40,6 +40,41 @@
   filter: blur(50px);
 }
 
+.flareLgOne {
+  position: absolute;
+  display: none;
+  width: 57.53px;
+  height: 700.92px;
+  left: -132px;
+  top: 135px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: rotate(-36.38deg);
+}
+
+.flareLgTwo {
+  position: absolute;
+  display: none;
+  width: 108px;
+  height: 402px;
+  left: 1100px;
+  top: 840px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+}
+
+.flareLgThree {
+  position: absolute;
+  display: none;
+  width: 308px;
+  height: 155px;
+  left: -41px;
+  top: 1220px;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
 .sectionHeading {
   width: 100%;
   color: $primary-3;
@@ -54,6 +89,12 @@
 }
 
 @media (min-width: 768px) {
+  .flareLgThree,
+  .flareLgTwo,
+  .flareLgOne {
+    display: block;
+  }
+
   .flareOne,
   .flareTwo,
   .flareThree {

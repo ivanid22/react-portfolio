@@ -70,6 +70,27 @@
   align-items: center;
 }
 
+.figLgOne {
+  position: absolute;
+  display: none;
+  width: 184px;
+  height: 184px;
+  left: 120px;
+  top: 0;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
+.figLgTwo {
+  position: absolute;
+  width: 226px;
+  height: 226px;
+  left: 780px;
+  top: 345px;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
 .headingFooter > div:first-child {
   display: none;
 }
@@ -78,6 +99,11 @@
   .figMobileOne,
   .figMobileTwo {
     display: none;
+  }
+
+  .figLgTwo,
+  .figLgOne {
+    display: block;
   }
 
   .headerCentered {

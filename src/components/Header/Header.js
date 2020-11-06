@@ -17,6 +17,8 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.figMobileOne} />
       <div className={styles.figMobileTwo} />
+      <div className={styles.figLgOne} />
+      <div className={styles.figLgTwo} />
       <div className={styles.headerCentered}>
         <h2 className={styles.name}>Ivan Diaz</h2>
         <h3 className={styles.title}>Software Developer</h3>

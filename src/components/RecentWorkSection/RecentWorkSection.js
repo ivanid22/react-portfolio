@@ -40,6 +40,9 @@ const RecentWorkSection = () => {
       <div className={style.flareOne} />
       <div className={style.flareTwo} />
       <div className={style.flareThree} />
+      <div className={style.flareLgOne} />
+      <div className={style.flareLgTwo} />
+      <div className={style.flareLgThree} />
       <div className={style.sectionHeading}>
         <h1> My recent work </h1>
         <RecentWorkSectionItem projectInfo={testProject} />
