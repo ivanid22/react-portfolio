@@ -45,12 +45,15 @@ const RecentWorkSectionItem = ({ projectInfo, reversed }) => {
 
   return (
     <div className={style.itemContainer}>
-      <div className={`col-12 col-md-8 ${reversed ? 'order-md-2' : undefined} ${style.pictureContainer}`}>
-        <img src={imageUrl} alt="Project preview" className={style.projectImg} onClick={showModal} />
+      <div className={`col-12 col-md-8 ${reversed ? 'order-md-2' : undefined} ${style.pictureContainer}`} >
+        <div className={style.itemPicture} style={{backgroundImage: `url(${imageUrl})`}} />
       </div>
       <div className={`col-12 col-md-4 ${reversed ? 'order-md-1' : undefined} ${style.infoContainer}`}>
         <h2 className={style.infoTitle} onClick={showModal}> {projectName} </h2>
-        <p className={style.inforSummary} onClick={showModal}> {projectSummary} </p>
+        <p className={style.infoSummary} onClick={showModal}> {projectSummary} </p>
+        <Button enabled width={89} onClick={showModal}>
+          See project
+        </Button>
       </div>
       <Modal style={modalStyle} isOpen={modalOpen} onRequestClose={closeModal}>
         <div className={style.modalContentWrapper}>

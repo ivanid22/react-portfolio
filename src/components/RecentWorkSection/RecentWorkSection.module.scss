@@ -1,10 +1,43 @@
 @import '../../styles/common.scss';
 
 .sectionContainer {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+}
+
+.flareOne {
+  position: absolute;
+  width: 39.61px;
+  height: 482.57px;
+  left: 50px;
+  top: 200px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: rotate(-36.38deg);
+}
+
+.flareTwo {
+  position: absolute;
+  width: 70.28px;
+  height: 261.6px;
+  right: 14px;
+  top: 1000px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+}
+
+.flareThree {
+  position: absolute;
+  width: 308px;
+  height: 155px;
+  left: -93px;
+  top: 1800px;
+  background: rgba(237, 236, 255, 0.3);
+  filter: blur(50px);
 }
 
 .sectionHeading {
