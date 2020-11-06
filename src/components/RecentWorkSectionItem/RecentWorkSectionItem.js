@@ -11,6 +11,8 @@ const modalStyle = {
   overlay: {
     backgroundColor: 'inherit',
     transition: 'all 0.5s ease',
+    maxWidth: 1156,
+    margin: '0 auto',
   },
   content: {
     fontFamily: '\'Roboto\', sans-serif',

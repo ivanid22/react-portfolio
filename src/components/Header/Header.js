@@ -41,6 +41,13 @@ const Header = () => {
                 <span>React/Redux</span>
                 <span>Jest</span>
             </SkillsList>
+            <SkillsList heading="General">
+              <span>Git / Github</span>
+              <span>*nix administration</span>
+              <span>Remote collaboration</span>
+              <span>Pair-programming</span>
+              <span>TDD</span>
+            </SkillsList>
         </div>
       </div>
       <div className={styles.headingFooter}>

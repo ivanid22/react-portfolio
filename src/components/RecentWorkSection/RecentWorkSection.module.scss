@@ -52,3 +52,11 @@
   padding: 33px 0;
   border-bottom: 1px solid $border-color;
 }
+
+@media (min-width: 768px) {
+  .flareOne,
+  .flareTwo,
+  .flareThree {
+    display: none;
+  }
+}
