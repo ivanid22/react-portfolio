@@ -1,0 +1,20 @@
+@import '../../styles/common';
+
+.input {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+  background-color: #fff;
+  color: #81818c;
+  font-weight: 400;
+  padding: 15px;
+  width: 100%;
+}
+
+.emailInput {
+  box-sizing: border-box;
+  border: 1px solid $primary-3;
+  background-color: #f7f3ff;
+  color: #191765;
+}

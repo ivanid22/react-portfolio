@@ -13,6 +13,7 @@ import NavSocial from './components/NavSocial/NavSocial';
 import Header from './components/Header/Header';
 import styles from './Portfolio.module.scss';
 import RecentWorkSection from './components/RecentWorkSection/RecentWorkSection';
+import ContactSection from './components/ContactSection/ContactSection';
 
 library.add(faTimes, faChevronRight, faBars);
 
@@ -42,6 +43,7 @@ function App() {
       </Nav>
       <Header />
       <RecentWorkSection />
+      <ContactSection />
     </div>
   );
 }

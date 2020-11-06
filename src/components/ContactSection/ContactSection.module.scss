@@ -1,0 +1,29 @@
+@import '../../styles/common';
+
+.contactSectionContainer {
+  display: flex;
+  max-width: 685px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contactSectionTitle {
+  color: $primary-3;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.contactSectionDescription {
+  color: $neutral-10;
+  margin-top: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
