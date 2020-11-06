@@ -107,4 +107,15 @@
   .itemContainer {
     flex-direction: row;
   }
+
+  .itemPicture,
+  .pictureContainer {
+    height: 448px;
+  }
+
+  .modalImgContainer {
+    height: 505px;
+    background-position: center;
+    background-size: contain;
+  }
 }
