@@ -21,7 +21,7 @@ const ContactSectionForm = () => {
     const requestUrl = `${REACT_APP_BASE_MAIL_URL}/${REACT_APP_MAIL_API_DOMAIN}/messages`;
     event.preventDefault();
     setFormState('sendingMessage');
-    /*axios({
+    axios({
       url: requestUrl,
       method: 'POST',
       auth: {
@@ -34,17 +34,16 @@ const ContactSectionForm = () => {
         subject: subject,
         text: body,
       },
-    }).then((response) => {
-      console.log(response)
+    }).then(() => {
+      resetFields();
       setFormState('messageSent');
-    }).catch((error) => {
-      console.log(error)
+    }).catch(() => {
       setFormState('error');
-    });*/
-    setTimeout(() => {
+    });
+    /*setTimeout(() => {
       resetFields();
       setFormState('error');
-    }, 2000)
+    }, 2000)*/
   }
 
   const renderConfirmation = () => (
