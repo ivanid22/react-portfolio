@@ -5,6 +5,7 @@ import quickGameReviewsImage from '../../assets/quick-game-reviews.png';
 // import jsAsteroidsImage from '../../assets/jsAsteroids.PNG';
 // import reactStocksInfoImage from '../../assets/react-stocks-info.PNG'
 import RecentWorkSectionItem from "../RecentWorkSectionItem/RecentWorkSectionItem";
+import animateScroll from "react-scroll/modules/mixins/animate-scroll";
 
 const testProject = {
   imageUrl: image,
@@ -52,5 +53,7 @@ const RecentWorkSection = () => {
     </div>
   );
 };
+
+window.scroll = animateScroll;
 
 export default RecentWorkSection;

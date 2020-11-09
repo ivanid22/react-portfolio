@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTimes, faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -20,17 +20,12 @@ library.add(faTimes, faChevronRight, faBars);
 
 function App() {
 
+  const recentWorkSectionRef = useRef();
+  const contactSectionRef = useRef();
   const [navOpen, setNavOpen] = useState(false);
-
-  console.log(styles)
 
   return (
     <div className={`${styles.mainContainer} container`}>
-      <Navbar open={navOpen} handleClose={() => setNavOpen(false)}>
-        <NavbarItem>Portfolio</NavbarItem>
-        <NavbarItem>About</NavbarItem>
-        <NavbarItem>Contact</NavbarItem>
-      </Navbar>
       <Nav>
         <NavigationItem>
           <span className={styles.navBrand}>Ivan Diaz</span>
@@ -43,9 +38,13 @@ function App() {
         </div>
       </Nav>
       <Header />
-      <RecentWorkSection />
-      <ContactSection />
+      <div ref={recentWorkSectionRef}> <RecentWorkSection ref={recentWorkSectionRef} /> </div>
+      <div ref={contactSectionRef}> <ContactSection /> </div>
       <Footer />
+      <Navbar open={navOpen} handleClose={() => setNavOpen(false)}>
+        <NavbarItem scrollDestination={recentWorkSectionRef}>Portfolio</NavbarItem>
+        <NavbarItem scrollDestination={contactSectionRef} >Contact</NavbarItem>
+      </Navbar>
     </div>
   );
 }
