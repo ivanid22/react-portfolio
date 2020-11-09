@@ -3,10 +3,10 @@ import SocialBar from '../SocialBar/SocialBar';
 import styles from './Footer.module.scss';
 
 const urls = {
-  github: 'localhost',
-  linkedin: 'localhost',
-  twitter: 'localhost',
-  angelist: 'localhost',
+  github: 'https://github.com/ivanid22',
+  linkedin: 'https://linkedin.com/in/ivanid22',
+  twitter: 'https://www.twitter.com/ivanid22',
+  angelist: 'https://angel.co/u/ivan-diaz-12',
 };
 
 const Footer = () => {

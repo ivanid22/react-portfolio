@@ -5,8 +5,16 @@
 }
 
 .navSocialItem {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
   margin-left: 1em;
   font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.navSocialItem:hover {
+  color: darken(#fff, 40%);
 }
 
 @media (min-width: 720px) {

@@ -25,7 +25,7 @@ function App() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div className={`${styles.mainContainer} container`}>
+    <div className={`${styles.mainContainer} container`} id="top">
       <Nav>
         <NavigationItem>
           <span className={styles.navBrand}>Ivan Diaz</span>

@@ -8,10 +8,12 @@
 }
 
 .itemPicture {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 236px;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -89,6 +91,7 @@
   margin-top: 24px;
   max-height: 40vh;
   height: 181px;
+  border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
 }

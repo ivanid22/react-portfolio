@@ -7,12 +7,14 @@
 
 .socialBarItem {
   padding: 0 0.5em;
+  transition: all 0.5s ease;
 }
 
 .socialBarItem > a > svg {
   color: #fff;
+  transition: all 0.5s ease;
 }
 
 .socialBarItem > a > svg:hover {
-  color: darken(#fff, 20%);
+  color: darken(#fff, 40%);
 }
