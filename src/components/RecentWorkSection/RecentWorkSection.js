@@ -1,38 +1,52 @@
 import React from "react";
 import style from "./RecentWorkSection.module.scss";
-import image from "../../logo.svg";
 import quickGameReviewsImage from '../../assets/quick-game-reviews.png';
-// import jsAsteroidsImage from '../../assets/jsAsteroids.PNG';
-// import reactStocksInfoImage from '../../assets/react-stocks-info.PNG'
+import jsAsteroidsImage from '../../assets/jsAsteroids.PNG';
+import reactStocksInfoImage from '../../assets/react-stocks-info.PNG'
 import RecentWorkSectionItem from "../RecentWorkSectionItem/RecentWorkSectionItem";
 import animateScroll from "react-scroll/modules/mixins/animate-scroll";
 
-const testProject = {
-  imageUrl: image,
-  projectName: "Test project",
+const reactStocksInfo = {
+  imageUrl: reactStocksInfoImage,
+  projectName: 'React Stocks Info',
+  projectSummary: 
+    `A React/Redux web application that displays real-time information on financial stocks.`,
+  techStack: [
+    'html',
+    'css',
+    'javascript',
+    'React',
+    'Redux',
+  ],
+  liveUrl: 'https://react-stocks-info.netlify.app',
+  repoUrl: 'https://github.com/ivanid22/react-stocks-info',
+}
+
+const jsAsteroids = {
+  imageUrl: jsAsteroidsImage,
+  projectName: "jsAsteroids",
   projectSummary:
-    `It has survived not only five centuries, 
-     but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. including versions of Lorem Ipsum. including versions of Lorem Ipsum.`,
+    `A Web-based space-shooting game inspired by Asteroids. Built with Phaser.`,
   techStack: [
     'html',
     'Ruby on Rails',
     'css',
   ],
-  liveUrl: 'localhost:3000',
-  repoUrl: 'localhost:3000',
+  liveUrl: 'https://js-asteroids.netlify.app/',
+  repoUrl: 'https://github.com/ivanid22/js-spaceships',
 };
 
 const quickGameReviews = {
   imageUrl: quickGameReviewsImage,
   projectName: 'Quick Game Reviews',
-  projectSummary: `Placeholder summary for the project`,
+  projectSummary: `A Full-stack web application that lets users post and share video game reviews. Built on Ruby on Rails.`,
   techStack: [
     'html',
     'Ruby on Rails',
     'css',
   ],
   liveUrl: 'https://quick-game-reviews.herokuapp.com',
-  repoUrl: 'https://github.com/ivanid22/quick-game-reviews',
+  repoUrl: 'https://github.com/ivanid22/react-stocks-info',
 }
 
 const RecentWorkSection = () => {
@@ -46,9 +60,9 @@ const RecentWorkSection = () => {
       <div className={style.flareLgThree} />
       <div className={style.sectionHeading}>
         <h1> My recent work </h1>
-        <RecentWorkSectionItem projectInfo={testProject} />
+        <RecentWorkSectionItem projectInfo={jsAsteroids} />
         <RecentWorkSectionItem projectInfo={quickGameReviews} reversed />
-        <RecentWorkSectionItem projectInfo={testProject} />
+        <RecentWorkSectionItem projectInfo={reactStocksInfo} />
       </div>
     </div>
   );
