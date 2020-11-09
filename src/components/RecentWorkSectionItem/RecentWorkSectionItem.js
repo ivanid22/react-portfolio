@@ -31,7 +31,7 @@ Modal.setAppElement('#root');
 
 const RecentWorkSectionItem = ({ projectInfo, reversed }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const { imageUrl, projectName, projectSummary, techStack, liveUrl, repoUrl } = projectInfo;
+  const { imageUrl, projectName, projectSummary, techStack, liveUrl, repoUrl, projectDescription } = projectInfo;
   const appContainer = document.querySelector("#root"); // Get the app element from DOM to toggle a class. Awful hack, don't do it.
 
   const showModal = () => {
@@ -67,7 +67,7 @@ const RecentWorkSectionItem = ({ projectInfo, reversed }) => {
           </div>
           <div className={style.modalImgContainer} style={ { backgroundImage: `url(${imageUrl})` } } />
           <p className={style.modalDescriptionParagraph}>
-            {projectSummary}
+            {projectDescription}
           </p>
           <TechStackDetails stack={techStack} />
           <div className={style.modalButtonsContainer}>

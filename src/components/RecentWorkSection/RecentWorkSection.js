@@ -10,6 +10,13 @@ const reactStocksInfo = {
   projectName: 'React Stocks Info',
   projectSummary: 
     `A React/Redux web application that displays real-time information on financial stocks.`,
+  projectDescription: 
+    `
+    ReactStocksInfo is a web application built with React/Redux, that displays information about financial stocks.
+    It fetches data from the FinancialModelingPrep public API in real time and organizes it in a simple mobile-friendly
+    design. The user can search for a specific company to get more detailed information about it. The user can also filter
+    the search results by stock exchange.  
+    `,
   techStack: [
     'html',
     'css',
@@ -26,6 +33,13 @@ const jsAsteroids = {
   projectName: "jsAsteroids",
   projectSummary:
     `A Web-based space-shooting game inspired by Asteroids. Built with Phaser.`,
+  projectDescription: 
+    `
+      jsAsteroids is a browser game developed in javascript with the game development library "Phaser".
+      Its design is inspired by the classic video game "Asteroids", and aims to reproduce that classic
+      arcade gameplay experience on the browser.
+      The game also keeps track of the top 10 best scores through a specialized API.
+    `,
   techStack: [
     'html',
     'Ruby on Rails',
@@ -39,6 +53,11 @@ const quickGameReviews = {
   imageUrl: quickGameReviewsImage,
   projectName: 'Quick Game Reviews',
   projectSummary: `A Full-stack web application that lets users post and share video game reviews. Built on Ruby on Rails.`,
+  projectDescription: 
+    `
+    Quick Game Reviews is a site where users can write and share video game reviews.
+    The app also implements social features such as being able to follow other users, and liking posts.
+    `,
   techStack: [
     'html',
     'Ruby on Rails',
