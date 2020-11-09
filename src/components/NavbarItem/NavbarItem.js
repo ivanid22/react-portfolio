@@ -8,7 +8,6 @@ const NavbarItem = ({children, scrollDestination}) => {
   const handleNavbarClose = useContext(CloseContext)
   
   const handleClick = () => {
-    console.log(scrollDestination)
     window.scrollTo({ behavior: 'smooth', top: scrollDestination.current.offsetTop });
     handleNavbarClose();
   }

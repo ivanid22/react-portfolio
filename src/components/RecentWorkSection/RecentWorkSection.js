@@ -4,7 +4,6 @@ import quickGameReviewsImage from '../../assets/quick-game-reviews.png';
 import jsAsteroidsImage from '../../assets/jsAsteroids.PNG';
 import reactStocksInfoImage from '../../assets/react-stocks-info.PNG'
 import RecentWorkSectionItem from "../RecentWorkSectionItem/RecentWorkSectionItem";
-import animateScroll from "react-scroll/modules/mixins/animate-scroll";
 
 const reactStocksInfo = {
   imageUrl: reactStocksInfoImage,
@@ -51,7 +50,7 @@ const quickGameReviews = {
 
 const RecentWorkSection = () => {
   return (
-    <div className={style.sectionContainer}>
+    <div className={style.sectionContainer} id="recentWorkSectionContainer">
       <div className={style.flareOne} />
       <div className={style.flareTwo} />
       <div className={style.flareThree} />
@@ -67,7 +66,5 @@ const RecentWorkSection = () => {
     </div>
   );
 };
-
-window.scroll = animateScroll;
 
 export default RecentWorkSection;
