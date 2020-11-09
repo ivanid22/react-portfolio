@@ -14,7 +14,7 @@ const urls = {
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.figMobileOne} />
       <div className={styles.figMobileTwo} />
       <div className={styles.figLgOne} />
@@ -57,7 +57,7 @@ const Header = () => {
         <SocialBar urls={urls} />
         <ScrollBrand icon={faArrowDown} caption="Work" />
       </div>
-    </div>
+    </header>
   );
 };
 

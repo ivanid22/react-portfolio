@@ -11,10 +11,10 @@ const urls = {
 
 const Footer = () => {
   return(
-    <div className={styles.footerContainer}>
+    <footer className={styles.footerContainer}>
       <SocialBar urls={urls} size="2x" />
-      <p className={styles.emailBrand}>ivanid22@gmail.com</p>
-    </div>
+      <a href="mailto:ivan@ivand.me" className={styles.emailBrand}>ivan@ivand.me</a>
+    </footer>
   )
 }
 

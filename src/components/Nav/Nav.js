@@ -3,9 +3,9 @@ import styles from './Nav.module.scss'
 
 const Nav = ({ children }) => {
   return(
-    <div className={styles.nav}>
+    <nav className={styles.nav}>
       { children }
-    </div>
+    </nav>
   )
 }
 

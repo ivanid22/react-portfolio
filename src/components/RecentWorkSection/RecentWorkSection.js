@@ -50,7 +50,7 @@ const quickGameReviews = {
 
 const RecentWorkSection = () => {
   return (
-    <div className={style.sectionContainer} id="recentWorkSectionContainer">
+    <main className={style.sectionContainer} id="recentWorkSectionContainer">
       <div className={style.flareOne} />
       <div className={style.flareTwo} />
       <div className={style.flareThree} />
@@ -63,7 +63,7 @@ const RecentWorkSection = () => {
         <RecentWorkSectionItem projectInfo={quickGameReviews} reversed />
         <RecentWorkSectionItem projectInfo={reactStocksInfo} />
       </div>
-    </div>
+    </main>
   );
 };
 

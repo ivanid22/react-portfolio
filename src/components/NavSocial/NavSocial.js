@@ -21,7 +21,7 @@ const NavSocial = () => {
       <span className={styles.navSocialItem} onClick={() => onItemClick('#contactSectionContainer')}>
         Contact
       </span>
-      <a href="mailto:ivanid22@gmail.com" className={styles.navSocialItem}>
+      <a href="mailto:ivan@ivand.me" className={styles.navSocialItem}>
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
       </a>
     </div>

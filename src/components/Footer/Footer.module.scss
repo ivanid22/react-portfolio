@@ -8,6 +8,7 @@
 }
 
 .emailBrand {
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: #ebebff;
   font-weight: 400;
@@ -15,4 +16,9 @@
   line-height: 28px;
   text-align: center;
   margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+.emailBrand:hover {
+  text-decoration: none;
 }
