@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-portfolio
 
-## Available Scripts
+A React implementation of my personal portfolio website. It works with the Mailgun API out of the box. If you want to use the messaging form, you'll have to get a Mailgun account, register a domain and get an API key. Also, you will have to set up a few environment variables, as detail in a section below.
 
-In the project directory, you can run:
+## Live version
 
-### `npm start`
+- [Live version](https://ivand.me)
+  
+## Running the app locally
+You can always run the app through the live version linked on a previous section. But if you'd like to run it locally, follow the instructions below:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Getting the files
+First, you need to have the files on your computer. You can get them by either cloning this repository, or downloading its contents directly
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To clone the repository, go on the project's Github page, click on "Clone or download", copy the contents of the text box, and then run git clone "repo" on the command line, where "repo" is the text you just copied.
+If you want to download it directly instead, go on the project's Github page, click on "Clone or download", and then on "Download ZIP". After this, you need to extract the contents of the zip file on your computer.
 
-### `npm test`
+### Installing dependencies
+Now you need to open a terminal and navigate to the project's directory. Once there, run the command `npm install`. This is going to fetch and install all the dependencies for the app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Environment variables
+These are the environment variables used to configure the messaging system:
 
-### `npm run build`
+- REACT_APP_BASE_MAIL_URL=https://api.mailgun.net/v3
+- REACT_APP_MAIL_API_DOMAIN=(your registered Mailgun domain)
+- REACT_APP_MAIL_API_KEY=(your Mailgun API key)
+- REACT_APP_MAIL_RECIPIENT=(The email address that will be the recipient of the messages)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can either initialize those environment variables manually by using the `export` command in your command-line, for example:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- `export REACT_APP_API_URL=https://financialmodelingprep.com/api/v3`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Or you can create a `.env.development.local` file in the base folder of the application, with a line for each variable, like this:
 
-### `npm run eject`
+REACT_APP_BASE_MAIL_URL=https://api.mailgun.net/v3
+REACT_APP_MAIL_API_DOMAIN=(your registered Mailgun domain)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running the app
+Once that's done, run the command `npm start`. That should open a new browser window with the app. If the browser does not open, do it manually, paste this on the url box: localhost:3000, and press enter.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With
+  - create-react-app
+  - React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Ivan Diaz**
 
-## Learn More
+  - Github: [@ivanid22](https://github.com/ivanid22)
+  - Twitter: [@ivanid22](https://twitter.com/ivanid22)
+  - Linkedin: [Ivan Diaz](www.linkedin.com/in/ivanid22)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+  - Contributions, issues and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+  - Feel free to check the [issues page](./issues).
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - Give a ⭐️ if you like this project!
